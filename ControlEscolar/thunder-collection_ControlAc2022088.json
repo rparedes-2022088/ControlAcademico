@@ -1,0 +1,399 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "ControlAc2022088",
+    "dateExported": "2024-02-23T19:13:45.156Z",
+    "version": "1.1",
+    "folders": [
+        {
+            "_id": "e3a9799a-9097-4296-bf78-9db9a8c807ce",
+            "name": "Estudiantes",
+            "containerId": "",
+            "created": "2024-02-23T18:52:23.780Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "eae738f7-0f93-48d4-911a-97ae8c081eb7",
+            "name": "Profesores",
+            "containerId": "",
+            "created": "2024-02-23T18:52:28.917Z",
+            "sortNum": 20000
+        },
+        {
+            "_id": "0624e9d6-bd5f-443a-af7f-dcc14951335a",
+            "name": "Publicas",
+            "containerId": "",
+            "created": "2024-02-23T18:52:35.309Z",
+            "sortNum": 30000
+        },
+        {
+            "_id": "cb9f42dd-0101-4d36-9321-6c425dd59c4f",
+            "name": "AsignarCursos",
+            "containerId": "0624e9d6-bd5f-443a-af7f-dcc14951335a",
+            "created": "2024-02-23T18:55:18.965Z",
+            "sortNum": 40000
+        },
+        {
+            "_id": "27fca364-2061-48cf-980f-ed4264403d80",
+            "name": "Cursos",
+            "containerId": "eae738f7-0f93-48d4-911a-97ae8c081eb7",
+            "created": "2024-02-23T18:59:21.620Z",
+            "sortNum": 50000
+        },
+        {
+            "_id": "33d0819b-4728-44dd-8985-255493087a51",
+            "name": "Usuarios",
+            "containerId": "0624e9d6-bd5f-443a-af7f-dcc14951335a",
+            "created": "2024-02-23T19:04:59.574Z",
+            "sortNum": 70000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "7ec1fea4-a808-47f3-b998-c3b9dce1a1a7",
+            "colId": "2603b1b1-bccc-412d-bae5-df9912320b46",
+            "containerId": "cb9f42dd-0101-4d36-9321-6c425dd59c4f",
+            "name": "AsignarCurso",
+            "url": "administrarCursos/asignarCurso",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-02-23T18:55:28.628Z",
+            "modified": "2024-02-23T18:57:40.126Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "usuario",
+                        "value": ""
+                    },
+                    {
+                        "name": "curso",
+                        "value": ""
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "0adc52c4-0312-4070-8ab8-f8a95872d415",
+            "colId": "2603b1b1-bccc-412d-bae5-df9912320b46",
+            "containerId": "cb9f42dd-0101-4d36-9321-6c425dd59c4f",
+            "name": "CursosAsignados",
+            "url": "administrarCursos/cursosAsignados",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2024-02-23T18:58:21.190Z",
+            "modified": "2024-02-23T18:59:00.357Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": ""
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "c136ef6e-2513-466c-bdb4-9acefd973cc2",
+            "colId": "2603b1b1-bccc-412d-bae5-df9912320b46",
+            "containerId": "27fca364-2061-48cf-980f-ed4264403d80",
+            "name": "NuevoCurso",
+            "url": "cursos/newCurso",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2024-02-23T19:00:44.844Z",
+            "modified": "2024-02-23T19:01:50.906Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": ""
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": ""
+                    },
+                    {
+                        "name": "description",
+                        "value": ""
+                    },
+                    {
+                        "name": "teacher",
+                        "value": ""
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "6fb173f4-a742-494d-b22b-bfb0bbeabc91",
+            "colId": "2603b1b1-bccc-412d-bae5-df9912320b46",
+            "containerId": "27fca364-2061-48cf-980f-ed4264403d80",
+            "name": "BorrarCurso",
+            "url": "cursos/deleteCurso/",
+            "method": "DELETE",
+            "sortNum": 40000,
+            "created": "2024-02-23T19:02:18.733Z",
+            "modified": "2024-02-23T19:02:45.141Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": ""
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "2ceb6f9f-d8df-48f5-af87-a703ec7527b2",
+            "colId": "2603b1b1-bccc-412d-bae5-df9912320b46",
+            "containerId": "27fca364-2061-48cf-980f-ed4264403d80",
+            "name": "EditarCurso",
+            "url": "cursos/editarCurso/",
+            "method": "PUT",
+            "sortNum": 50000,
+            "created": "2024-02-23T19:03:04.557Z",
+            "modified": "2024-02-23T19:03:27.919Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": ""
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "",
+                        "isDisabled": true
+                    },
+                    {
+                        "name": "description",
+                        "value": "",
+                        "isDisabled": true
+                    },
+                    {
+                        "name": "teacher",
+                        "value": "",
+                        "isDisabled": true
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "b94128ff-3943-455e-a6e9-bca048834364",
+            "colId": "2603b1b1-bccc-412d-bae5-df9912320b46",
+            "containerId": "27fca364-2061-48cf-980f-ed4264403d80",
+            "name": "VerMisCursos",
+            "url": "cursos/verMisClases",
+            "method": "GET",
+            "sortNum": 60000,
+            "created": "2024-02-23T19:03:46.901Z",
+            "modified": "2024-02-23T19:04:02.981Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": ""
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "07058fd5-eec7-44d4-a6d9-d8b19665d6c1",
+            "colId": "2603b1b1-bccc-412d-bae5-df9912320b46",
+            "containerId": "33d0819b-4728-44dd-8985-255493087a51",
+            "name": "RegistrarEstudiante",
+            "url": "usuarios/registerStudent",
+            "method": "POST",
+            "sortNum": 70000,
+            "created": "2024-02-23T19:05:14.222Z",
+            "modified": "2024-02-23T19:06:00.649Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": ""
+                    },
+                    {
+                        "name": "surname",
+                        "value": ""
+                    },
+                    {
+                        "name": "username",
+                        "value": ""
+                    },
+                    {
+                        "name": "password",
+                        "value": ""
+                    },
+                    {
+                        "name": "phone",
+                        "value": ""
+                    },
+                    {
+                        "name": "address",
+                        "value": ""
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "7d6449a2-8636-4c9e-bd6a-ff2915891212",
+            "colId": "2603b1b1-bccc-412d-bae5-df9912320b46",
+            "containerId": "33d0819b-4728-44dd-8985-255493087a51",
+            "name": "RegistrarProfesor",
+            "url": "usuarios/registerTeacher",
+            "method": "POST",
+            "sortNum": 80000,
+            "created": "2024-02-23T19:06:22.307Z",
+            "modified": "2024-02-23T19:06:52.952Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": ""
+                    },
+                    {
+                        "name": "surname",
+                        "value": ""
+                    },
+                    {
+                        "name": "username",
+                        "value": ""
+                    },
+                    {
+                        "name": "password",
+                        "value": ""
+                    },
+                    {
+                        "name": "phone",
+                        "value": ""
+                    },
+                    {
+                        "name": "address",
+                        "value": ""
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "bce8677c-bbaf-4713-9f23-d5334a57c852",
+            "colId": "2603b1b1-bccc-412d-bae5-df9912320b46",
+            "containerId": "33d0819b-4728-44dd-8985-255493087a51",
+            "name": "Logearse",
+            "url": "usuarios/login",
+            "method": "POST",
+            "sortNum": 90000,
+            "created": "2024-02-23T19:07:05.573Z",
+            "modified": "2024-02-23T19:07:25.686Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "username",
+                        "value": ""
+                    },
+                    {
+                        "name": "password",
+                        "value": ""
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "54173cf1-8dbd-4fd3-81cd-e0e231fe1364",
+            "colId": "2603b1b1-bccc-412d-bae5-df9912320b46",
+            "containerId": "33d0819b-4728-44dd-8985-255493087a51",
+            "name": "BorrarUsuario",
+            "url": "usuarios/deleteUser/",
+            "method": "DELETE",
+            "sortNum": 100000,
+            "created": "2024-02-23T19:09:32.246Z",
+            "modified": "2024-02-23T19:09:49.749Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": ""
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "9d70946f-acf9-4ce2-a7cb-8d4b2fb707a9",
+            "colId": "2603b1b1-bccc-412d-bae5-df9912320b46",
+            "containerId": "33d0819b-4728-44dd-8985-255493087a51",
+            "name": "ActualizarUsuario",
+            "url": "usuarios/updateUser/",
+            "method": "PUT",
+            "sortNum": 110000,
+            "created": "2024-02-23T19:10:05.221Z",
+            "modified": "2024-02-23T19:11:32.620Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": ""
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": ""
+                    },
+                    {
+                        "name": "surname",
+                        "value": ""
+                    },
+                    {
+                        "name": "username",
+                        "value": ""
+                    },
+                    {
+                        "name": "phone",
+                        "value": ""
+                    },
+                    {
+                        "name": "address",
+                        "value": ""
+                    }
+                ]
+            },
+            "tests": []
+        }
+    ],
+    "settings": {
+        "options": {
+            "baseUrl": "localhost:2880/"
+        }
+    }
+}
